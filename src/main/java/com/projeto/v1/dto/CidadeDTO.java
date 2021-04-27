@@ -1,36 +1,36 @@
 package com.projeto.v1.dto;
 
-import com.projeto.v1.domain.Cidade;
-
 import java.io.Serializable;
 
+import com.projeto.v1.domain.Cidade;
+
 public class CidadeDTO implements Serializable {
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    private Integer id;
-    private String nome;
+	private Integer id;
+	private String nome;
+	
+	public CidadeDTO() {
+	}
 
-    public CidadeDTO() {
-    }
+	public CidadeDTO(Cidade obj) {
+		id = obj.getId();
+		nome = obj.getNome();
+	}
+	
+	public Integer getId() {
+		return id;
+	}
 
-    public CidadeDTO(Cidade obj) {
-        id = obj.getId();
-        nome = obj.getNome();
-    }
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    public Integer getId() {
-        return id;
-    }
+	public String getNome() {
+		return nome;
+	}
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 }
