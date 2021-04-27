@@ -5,32 +5,32 @@ import java.io.Serializable;
 import com.projeto.v1.domain.Cidade;
 
 public class CidadeDTO implements Serializable {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	private Integer id;
-	private String nome;
-	
-	public CidadeDTO() {
-	}
+    private Integer id;
+    private String nome;
 
-	public CidadeDTO(Cidade obj) {
-		id = obj.getId();
-		nome = obj.getNome();
-	}
-	
-	public Integer getId() {
-		return id;
-	}
+    public CidadeDTO() {
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public CidadeDTO(Cidade obj) {
+        id = obj.getId();
+        nome = obj.getNome();
+    }
 
-	public String getNome() {
-		return nome;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }

@@ -22,6 +22,5 @@ public class URL {
             list.add(Integer.parseInt(vet[i]));
         }
         return list;
-        //return Arrays.asList(s.split(",")).stream().map(x -> Integer.parseInt(x)).collect(Collectors.toList());
     }
 }

@@ -11,6 +11,6 @@ import com.projeto.v1.domain.Estado;
 @Repository
 public interface EstadoRepository extends JpaRepository<Estado, Integer> {
 
-	@Transactional(readOnly=true)
-	public List<Estado> findAllByOrderByNome();
+    @Transactional(readOnly = true)
+    public List<Estado> findAllByOrderByNome();
 }

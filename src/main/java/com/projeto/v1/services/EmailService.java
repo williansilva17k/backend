@@ -7,9 +7,9 @@ import com.projeto.v1.domain.Pedido;
 
 public interface EmailService {
 
-	void sendOrderConfirmationEmail(Pedido obj);
-	
-	void sendEmail(SimpleMailMessage msg);
-	
-	void sendNewPasswordEmail(Cliente cliente, String newPass);
+    void sendOrderConfirmationEmail(Pedido obj);
+
+    void sendEmail(SimpleMailMessage msg);
+
+    void sendNewPasswordEmail(Cliente cliente, String newPass);
 }
